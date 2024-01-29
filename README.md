@@ -15,7 +15,7 @@ appディレクトリにcd（チェンジディレクトリ）して　python ap
 
 *settings.py*
 データベースとの接続情報を記述。
-基本的には編集不要。
+db_name='Bookapp'に変更。
 
 *models.py*
 データベースのテーブルに対応するモデルを記述。
