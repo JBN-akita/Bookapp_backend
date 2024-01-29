@@ -101,4 +101,4 @@ async def books_delete(id: int, request: Request, db: Session = Depends(get_db))
 
 # FastAPIアプリケーションを実行
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.168.0.100", port=8000, log_level="debug")
+    uvicorn.run(app, host="0.0.0.0", port=8000, log_level="debug")
