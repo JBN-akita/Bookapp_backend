@@ -56,7 +56,8 @@ async def books_regist(request:Request,db: Session = Depends(get_db)):
         author=data['author'],
         page_count=data['page_count'],
         published_date=data['published_date'],
-        price=data['price']
+        price=data['price'],
+        registered_user=data['registered_user']
     )
     #登録処理
     db.add(book_data)
